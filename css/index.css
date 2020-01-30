@@ -6,6 +6,12 @@ body {
     overflow: auto;
 }
 
+#part1content {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.jpg);
+}
+
 header {
     margin: 2em;
     top: 1em;
@@ -15,24 +21,25 @@ header {
 header > ul {
     display: flex;
     justify-content: flex-end;
+    margin-block-start: 0em;
 }
 
 header > ul > li {
     list-style-type: none;
     padding: 0.5em;
     margin: 1em;
-    color: black;
+    color: #FFCC00;
     font-size: 1.5em;
     font-weight: 900;
 }
 
 a:link, a:visited {
-    color: black;
+    color: #FFCC00;
     text-decoration: none;
 }
 
 a:hover {
-    color: black;opacity:0.4;
+    color: #FFCC00;opacity:0.4;
     text-decoration: underline;
 }
 
@@ -45,37 +52,54 @@ a:hover {
 }
 
 div#myimage {
-    flex: 1;
+    flex:1;
+    border-left: 4px blue;
+
 }
 
 div#myimage > img {
-    transform: rotate(90deg);
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    float: right;
     object-fit: contain;
 }
 
 div#myintro {
     flex: 1;
-    padding: 2em;
-    width: 100%;
     position: relative;
-    width: 300.69px;
-    height: 630.55px;
+    color: #FFCC00;
+}
+
+h1 {
+    font-size: 80px;
 }
 
 .contact {
     position: fixed;
     left: 30px;
-    font-size: 30px;
-    color: black;
+    font-size: 20px;
+    color: #FFCC00;
     border: none;
     background: none;
     cursor: pointer;
-    bottom: 5em;
+    bottom: 0px;
     z-index: 1;
+}
+
+.contact#logo {
+    background-color:white;
+    font-size: 10px;
 }
 
 .contact i {
     padding: 10px;
+}
+
+.contact::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150px;
+    background-color: #FFCC00;
+    margin: 0 auto;
 }
