@@ -6,6 +6,7 @@ body {
     font-family: 'Noto Serif', serif;
     box-sizing: border-box;
     overflow: auto;
+    box-sizing: border-box;
 }
 
 /*---------------NAVIGATION BAR --------------*/
@@ -15,19 +16,18 @@ nav {
     float: right;
     display: block;
     z-index: 11;
+    position: absolute;
 }
 
 nav > ul {
     display: flex;
     justify-content: flex-end;
     margin-block-start: 0em;
-    margin-block-end: 0.5em;
 }
 
 nav > ul > li {
     list-style-type: none;
-    padding: 1em;
-    margin: 1em;
+    padding: 1em;    
     color: #ff5851;
     font-size: 1.5em;
     font-weight: 900;
@@ -75,11 +75,18 @@ a:hover {
 /*_--------------------------MAIN----------------*/
 
 .contents {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
-    top: 15em;
+    top: 10em;
     height: 700px;
+}
+
+.section {
+    width: 100%;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 10em;
 }
 
 /*-------------------------HELLO------------------*/
@@ -90,7 +97,36 @@ a:hover {
     flex-wrap: wrap;
 }
 
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#hellotext {
+    background-color: #ff5851;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#introtext {
+    margin: 0.9em;
+    color: #ff5851;
+    font-size:30px;
+    font-weight:bolder;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro4 {
+    color: grey;
+    font-style: italic;
+}
+/*-----------------------ABOUT------------------*/
 #about {
+
 }
 
 #projects {
