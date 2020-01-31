@@ -71,7 +71,7 @@ a:hover {
     margin: 0 auto;
 }
 
-/*_--------------------------MAIN----------------*/
+/*--------------------------MAIN------------------*/
 
 .contents {
     width: 90%;
@@ -167,40 +167,28 @@ a:hover {
 
 }
 
+/*-----------------CONTACT-----------------------*/
+
 #contact {
     position: relative;
     top: 15em;
     height: 75px;
     text-align: center;
+    background-color: #ff5851;
+    color: white;
+    padding: 0.5em;
 }
-/*
-.about {
+
+#contact > #contactcontainer {
     display: flex;
     flex-direction: row;
-    width: 60%;
-    height: 75%;
-    margin: 0 auto;
+    list-style-type: none;
 }
 
-div#myimage {
-    flex:1;
-
+#contactitem {
+    display: inline-block;
+    padding: 1em;
+    font-size: 20px;
 }
 
-div#myimage > img {
-    width: 80%;
-    height: 80%;
-    float: right;
-    object-fit: contain;
-}
-
-div#myintro {
-    flex: 1;
-    position: relative;
-    color: #FFCC00;
-}
-
-h1 {
-    font-size: 4em;
-}
-*/
+/*#####################################################*/
