@@ -98,7 +98,7 @@ a:hover {
     font-size: 100px;
     font-weight: bold;
     text-align: right;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /*box-shadow from www.w3schools.com;*/
 }
 
 #introtext {
@@ -115,6 +115,7 @@ a:hover {
     color:#A9A9A9;
     font-style: italic;
 }
+
 /*-----------------------ABOUT------------------*/
 .about {
     display: grid;
@@ -202,11 +203,12 @@ a:hover {
 }
 
 .projectblock {
-    flex: 0 0 auto;
+    flex: 0 0 auto;  /*flex grow, flex shrink, flex basis*/
     width: 97%;
     height: 500px;
     background-color: #ff5851;
     margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*-----------------CONTACT-----------------------*/
