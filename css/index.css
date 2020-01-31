@@ -13,8 +13,8 @@ body {
 nav {
     width: 100%;
     float: right;
-    position: fixed;
     display: block;
+    z-index: 11;
 }
 
 nav > ul {
@@ -28,7 +28,7 @@ nav > ul > li {
     list-style-type: none;
     padding: 1em;
     margin: 1em;
-    color: black;
+    color: #ff5851;
     font-size: 1.5em;
     font-weight: 900;
 }
@@ -41,7 +41,7 @@ a:link, a:visited {             /*ALL LINKS*/
 
 a:hover {
     color: inherit;
-    opacity:0.4;
+    opacity:0.8;
     text-decoration: underline;
 }
 
@@ -51,7 +51,7 @@ a:hover {
     position: fixed;
     left: 30px;
     font-size: 20px;
-    color: inherit;
+    color: #ff5851;
     border: none;
     background: none;
     cursor: pointer;
@@ -68,7 +68,7 @@ a:hover {
     display: block;
     width: 1px;
     height: 150px;
-    background-color: black;
+    background-color: #ff5851;
     margin: 0 auto;
 }
 
@@ -85,24 +85,16 @@ a:hover {
 /*-------------------------HELLO------------------*/
 
 #hello {
-    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    top: 15em;
-    height: 700px;
 }
 
 #about {
-    position: relative;
-    top: 15em;
-    height: 700px;
 }
 
 #projects {
-    position: relative;
-    top: 15em;
-    height: 700px;
+
 }
 
 #contact {
