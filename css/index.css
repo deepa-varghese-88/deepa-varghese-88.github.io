@@ -3,8 +3,6 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Noto Serif', serif;
     box-sizing: border-box;
     overflow: auto;
@@ -15,8 +13,8 @@ body {
 nav {
     width: 100%;
     float: right;
-    z-index: 11;
     position: fixed;
+    display: block;
 }
 
 nav > ul {
@@ -61,11 +59,6 @@ a:hover {
     z-index: 11;
 }
 
-.contact#logo {
-    background-color:white;
-    font-size: 10px;
-}
-
 .contact i {
     padding: 10px;
 }
@@ -79,6 +72,45 @@ a:hover {
     margin: 0 auto;
 }
 
+/*_--------------------------MAIN----------------*/
+
+.contents {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    top: 15em;
+    height: 700px;
+}
+
+/*-------------------------HELLO------------------*/
+
+#hello {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 15em;
+    height: 700px;
+}
+
+#about {
+    position: relative;
+    top: 15em;
+    height: 700px;
+}
+
+#projects {
+    position: relative;
+    top: 15em;
+    height: 700px;
+}
+
+#contact {
+    position: relative;
+    top: 15em;
+    height: 75px;
+    text-align: center;
+}
 /*
 .about {
     display: flex;
@@ -110,9 +142,3 @@ h1 {
     font-size: 4em;
 }
 */
-
-
-#part2projects {
-    background-color: white;
-    color: black;
-}
