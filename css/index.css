@@ -193,15 +193,18 @@ a:hover {
 }
 
 .projectlist {
+    width: 80%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1em;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 auto;
 }
 
 .projectblock {
-    width: 350px;
-    height: 350px;
+    flex: 0 0 auto;
+    width: 97%;
+    height: 500px;
     background-color: #ff5851;
     margin: 1em;
 }
@@ -210,7 +213,7 @@ a:hover {
 
 #contact {
     position: relative;
-    top: 100em;
+    top: 120em;
     bottom: 0em;
     left: 0em;
     height: 75px;
