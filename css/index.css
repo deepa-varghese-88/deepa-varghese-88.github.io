@@ -203,12 +203,46 @@ a:hover {
 }
 
 .projectblock {
+    position: relative;
     flex: 0 0 auto;  /*flex grow, flex shrink, flex basis*/
-    width: 97%;
-    height: 500px;
-    background-color: #ff5851;
+    width: 20em;
+    height: 23em;   ;
+    /*background-color: #ff5851;*/
+    color: white;
     margin: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em;
+}
+
+.projectblock > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.projectblock > .proj {
+    padding: 2px;
+    color: #ff5851;
+}
+
+.projectblock > .overlay {      /*https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: linear-gradient(to bottom right, #A9A9A9, #ff5851);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    padding: .5em;
+}
+
+.projectblock:hover .overlay {
+    opacity: 1;
 }
 
 /*-----------------CONTACT-----------------------*/

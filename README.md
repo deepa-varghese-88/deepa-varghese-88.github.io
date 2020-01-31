@@ -7,3 +7,4 @@ References:
 - https://web.cecs.pdx.edu/~nthy/index.html (inspiration)    
 - https://brittanychiang.com/#content (inspiration)  
 - https://www.wokine.com/ (inspiration)
+- https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade (projects - overlay)
