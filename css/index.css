@@ -194,7 +194,7 @@ a:hover {
 }
 
 .projectlist {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -204,9 +204,11 @@ a:hover {
 
 .projectblock {
     position: relative;
+    display: grid;
+    grid-template-rows: 80% 20%;
     flex: 0 0 auto;  /*flex grow, flex shrink, flex basis*/
     width: 20em;
-    height: 23em;   ;
+    height: 25em;   ;
     /*background-color: #ff5851;*/
     color: white;
     margin: 1em;
@@ -215,14 +217,16 @@ a:hover {
 }
 
 .projectblock > img {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 .projectblock > .proj {
     padding: 2px;
-    color: #ff5851;
+    color: #A9A9A9;
+    font-weight: bold;
 }
 
 .projectblock > .overlay {      /*https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade*/
@@ -242,7 +246,12 @@ a:hover {
 }
 
 .projectblock:hover .overlay {
-    opacity: 1;
+    opacity: 0.9;
+}
+
+.projectblock > .overlay > .icon {
+    font-size: 2.6em;
+    text-align: justify;
 }
 
 /*-----------------CONTACT-----------------------*/
