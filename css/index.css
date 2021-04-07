@@ -88,6 +88,10 @@ a:hover {
   margin: 5em;
 }
 
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*-------------------------HELLO------------------*/
 .intro {
   display: grid;
@@ -102,24 +106,28 @@ a:hover {
   flex-flow: column;
   background-color: #ff5851;
   color: white;
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: bold;
   text-align: right;
 }
 
 #introtext {
-  padding: 0.9em;
+  padding: 2em;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   color: #ff5851;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: regular;
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: white; */
 }
+
+/* .introtexteach {
+  padding: 0.9em;
+} */
 
 #intro2 {
   font-size: 4rem;
@@ -157,7 +165,7 @@ a:hover {
   height: 100%;
   object-fit: contain;
   filter: grayscale(100%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 #aboutimg > img:hover {
