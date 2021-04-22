@@ -8,7 +8,7 @@ body {
   overflow: auto;
 }
 
-/*--------------------SCROLL MENU---------------------*/
+/*--------------------TOP ---------------------*/
 
 body::before {
   content: "";
@@ -20,7 +20,7 @@ body::before {
   right: 0;
   z-index: 11;
 }
-.scroll-menu {
+.top {
   position: fixed;
   right: 30px;
   font-size: 30px;
@@ -60,7 +60,20 @@ body::before {
   margin: 0 auto;
 }
 
-/*---------------NAVIGATION BAR --------------*/
+/*---------------MENU SIDEBAR----------------------*/
+.menu {
+  position: fixed;
+  right: 30px;
+  font-size: 22px;
+  color: #ff5851;
+  border: none;
+  background: none;
+  cursor: pointer;
+  bottom: 12em;
+  z-index: 11;
+}
+
+/*---------------NAVIGATION ---- ------------------*/
 
 nav {
   width: 100%;
