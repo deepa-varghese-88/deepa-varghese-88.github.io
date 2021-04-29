@@ -8,3 +8,4 @@ References:
 - https://brittanychiang.com/#content (inspiration)  
 - https://www.wokine.com/ (inspiration)
 - https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade (projects - overlay)
+- https://codepen.io/andersoncampos/pen/MNgEEM (fadeIn effect)
