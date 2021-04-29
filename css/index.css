@@ -109,8 +109,11 @@ a:hover {
 }
 
 .page {
-  /* each page's content*/
   box-sizing: border-box;
+}
+
+.pageheight {
+  /* each page's content*/
   height: 100vh;
 }
 
@@ -204,12 +207,13 @@ a:hover {
 
 .about {
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 30% 70%;
 }
 
-#aboutimg {
+/* #aboutimg {
   padding-top: 1em;
-}
+} */
 
 #aboutimg > img {
   width: 100%;
@@ -350,9 +354,30 @@ a:hover {
   right: 10px;
 }
 
-/*-----------------CONTACT-----------------------*/
+/*-----------------FOOTER-CONTACT-----------------------*/
 
-#contact {
+#footer {
+  padding-top: 10em;
+}
+
+.footer {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 30% 70%;
+}
+
+#getintouchtext {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column;
+  background-color: #ff5851;
+  color: white;
+  /* font-size: 8rem; */
+  font-weight: bold;
+  text-align: right;
+}
+
+/* #contact {
   position: relative;
   bottom: 0em;
   left: 0em;
@@ -377,6 +402,6 @@ a:hover {
 .contactitem {
   display: inline-block;
   padding: 1em;
-}
+} */
 
 /*#####################################################*/
