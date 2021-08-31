@@ -32,6 +32,8 @@ a:hover {
   text-decoration: none;
 }
 
+/* -------------ANIMATION - KEYFRAMES ------------------*/
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -127,7 +129,9 @@ nav {
   top: 0;
   left: 0;
   display: inline-block;
-  /* position: absolute; */
+  position: fixed;
+  z-index: 11;
+  background-color: var(--background-color);
 }
 
 .nav {
@@ -138,7 +142,8 @@ nav {
 nav > ul {
   display: flex;
   justify-content: flex-end;
-  margin-block-start: 0em;
+  margin-block-start: 2vmax;
+  margin-block-end: 2vmax;
 }
 
 nav > ul > li {
@@ -223,7 +228,7 @@ nav > ul > li > a:hover {
 
 /*-------------------------HELLO------------------*/
 #hello {
-  padding-top: 5vmax;
+  padding-top: 8vmax;
   position: relative;
 }
 
@@ -252,7 +257,7 @@ nav > ul > li > a:hover {
 }
 
 #introtext {
-  padding: 2em;
+  padding: 2vmax;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -316,12 +321,12 @@ nav > ul > li > a:hover {
 
 /*-----------------------ABOUT------------------*/
 #about {
-  padding-top: 10em;
+  padding-top: 13vmax;
 }
 
 .about {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 1vmax;
   grid-template-columns: 30% 70%;
 }
 
@@ -347,10 +352,10 @@ nav > ul > li > a:hover {
 }
 
 #abouttext {
-  padding: 2em;
+  padding: 1vmax;
   background-color: var(--coral);
   color: var(--background-color);
-  font-size: 1.4em;
+  font-size: 1vmax;
   display: grid;
   grid-gap: 5px;
   grid-template-rows: 25% 75%;
@@ -375,12 +380,18 @@ nav > ul > li > a:hover {
 
 /*------------------PROJECTS--------------------*/
 #projects {
-  padding-top: 5em;
+  padding-top: 8vmax;
 }
 
 .projects > #projectstitle {
   color: var(--gray);
-  font-size: 3em;
+  font-size: 2vmax;
+  animation: translateright 1000ms ease-in-out 0s 1 normal none,
+    fadeIn 1000ms ease-in 0s 1 normal forwards;
+  -webkit-animation: translateright 1000ms ease-in-out 0s 1 normal none,
+    fadeIn 1000ms ease-in 0s 1 normal forwards;
+  -moz-animation: translateright 1000ms ease-in-out 0s 1 normal none,
+    fadeIn 1000ms ease-in 0s 1 normal forwards;
 }
 
 .projects > #projectstitle::after {
@@ -391,6 +402,15 @@ nav > ul > li > a:hover {
   background-color: var(--coral);
 }
 
+#projectsnav {
+  animation: translateleft 1000ms ease-in-out 0s 1 normal none,
+    fadeIn 1000ms ease-in 0s 1 normal forwards;
+  -webkit-animation: translateleft 1000ms ease-in-out 0s 1 normal none,
+    fadeIn 1000ms ease-in 0s 1 normal forwards;
+  -moz-animation: translateleft 1000ms ease-in-out 0s 1 normal none,
+    fadeIn 1000ms ease-in 0s 1 normal forwards;
+}
+
 #projectsnav > ul {
   display: flex;
   justify-content: flex-end;
@@ -399,10 +419,19 @@ nav > ul > li > a:hover {
 
 #projectsnav > ul > li {
   list-style-type: none;
-  padding: 1em;
+  padding: 1vmax;
   color: var(--coral);
-  font-size: 1.5em;
+  font-size: 1.5vmax;
   font-weight: 900;
+}
+
+#projectsnav > ul > li > a {
+  border-bottom: 1px solid transparent;
+  transition: border 200ms ease-in;
+}
+
+#projectsnav > ul > li > a:hover {
+  border-color: var(--gray);
 }
 
 .projectlist {
