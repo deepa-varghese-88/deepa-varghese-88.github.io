@@ -576,6 +576,24 @@ nav > ul > li > a:hover {
   color: var(--coral);
   text-decoration: underline;
   text-underline-offset: 3px;
+  box-shadow: 5px 5px 10px var(--gray);
+}
+
+#footerlast {
+  text-align: center;
+  font-size: 0.7vmax;
+  margin: 2vmax;
+  color: var(--gray);
+}
+
+#footerlast > a {
+  color: var(--coral);
+  transition: text-decoration 250ms ease-in;
+}
+
+#footerlast > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* mobile phones */
