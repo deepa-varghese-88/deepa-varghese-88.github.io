@@ -548,7 +548,7 @@ nav > ul > li > a:hover {
   width: 40%;
   margin: 1vmax auto;
   color: var(--coral);
-  
+
   padding: 1vmax;
 }
 
@@ -597,12 +597,12 @@ nav > ul > li > a:hover {
 }
 
 /* mobile phones */
-@media (max-width: 320px) { 
+@media (max-width: 320px) {
 }
 /* tablet */
 @media (max-width: 768px) {
- }
- 
+}
+
 /* laptop */
 @media (max-width: 1024px) {
   .contactfooter > #footertext {
@@ -618,9 +618,10 @@ nav > ul > li > a:hover {
   .contactfooter > #footertitle::after {
     width: 40%;
   }
- }
+}
 /* desktop */
-@media (max-width: 1600px) { … }
+@media (max-width: 1600px) {
+}
 
 /* .contact i {
   padding: 0.7vmax;
