@@ -34,6 +34,8 @@ a:hover {
 
 /* -------------ANIMATION - KEYFRAMES ------------------*/
 
+/*-------------------fadeIN------------------*/
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -58,6 +60,8 @@ a:hover {
     opacity: 1;
   }
 }
+
+/*------------------translatedown-------------------*/
 
 @-webkit-keyframes translatedown {
   0% {
@@ -86,6 +90,8 @@ a:hover {
   }
 }
 
+/*------------------translate right-------------------*/
+
 @-webkit-keyframes translateright {
   0% {
     transform: translateX(-50px);
@@ -112,6 +118,8 @@ a:hover {
     transform: translate(0px, 0px);
   }
 }
+
+/*------------------translate left-------------------*/
 
 @keyframes translateleft {
   0% {
@@ -156,11 +164,12 @@ nav > ul > li {
 
 nav > ul > li > a {
   border-bottom: 1px solid transparent;
-  transition: border 200ms ease-in;
+  transition: border 200ms ease-in, transform 250ms ease-in;
 }
 
 nav > ul > li > a:hover {
   border-color: var(--gray);
+  transform: translate(0px, -2px);
 }
 
 /*--------------------CONTACT SIDEBAR--------------*/
@@ -509,53 +518,94 @@ nav > ul > li > a:hover {
 }
 
 /*-----------------FOOTER-CONTACT-----------------------*/
-
-#footer {
-  padding-top: 10em;
+#contactfooter {
+  padding-top: 8vmax;
 }
 
-.footer {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 30% 70%;
-}
-
-#getintouchtext {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: column;
-  background-color: var(--coral);
-  color: var(--background-color);
-  /* font-size: 8rem; */
-  font-weight: bold;
-  text-align: right;
-}
-
-/* #contact {
-  position: relative;
-  bottom: 0em;
-  left: 0em;
-  height: 75px;
+.contactfooter {
   text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: var(--coral);;
-  color: var(--background-color);
-  padding: 1em 0;
-  margin-top: 3em;
+  margin-bottom: 8vmax;
 }
 
-#contact > #contactcontainer {
+.contactfooter > #footertitle {
+  color: var(--gray);
+  font-size: 2vmax;
+  animation: fadeIn 1000ms ease-in 0s 1 normal forwards;
+  -webkit-animation: fadeIn 1000ms ease-in 0s 1 normal forwards;
+  -moz-animation: fadeIn 1000ms ease-in 0s 1 normal forwards;
+}
+
+.contactfooter > #footertitle::after {
+  content: "";
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: var(--coral);
+}
+
+.contactfooter > #footertext {
+  width: 40%;
+  margin: 1vmax auto;
+  color: var(--coral);
+  font-size: 2vmax;
+  padding: 1vmax;
+}
+
+#footerbuttons {
+  width: 40%;
+  margin: 1vmax auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style-type: none;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
-.contactitem {
-  display: inline-block;
-  padding: 1em;
+.contactbutton {
+  padding: 1.5vmax;
+  color: var(--gray);
+  margin: 1vmax;
+  border: 1px solid var(--coral);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 2vmax;
+  transition: transform 250ms ease-in, color 200ms ease-in,
+    text-decoration 200ms ease-in;
+}
+
+.contactbutton:hover {
+  transform: translate(0px, -5px);
+  color: var(--coral);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* mobile phones */
+@media (max-width: 320px) { 
+}
+/* tablet */
+@media (max-width: 768px) {
+ }
+ 
+/* laptop */
+@media (max-width: 1024px) {
+  .contactfooter > #footertext {
+    width: 80%;
+  }
+  #footerbuttons {
+    width: 80%;
+  }
+ }
+/* desktop */
+@media (max-width: 1600px) { … }
+
+/* .contact i {
+  padding: 0.7vmax;
+  color: inherit;
+  transition: transform 250ms ease-in;
+}
+
+.contact i:hover {
+  transform: translate(0px, -5px);
 } */
 
 /*---------------TOP (chevron nav to top)-------------*/
