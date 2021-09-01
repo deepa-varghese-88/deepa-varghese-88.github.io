@@ -548,7 +548,7 @@ nav > ul > li > a:hover {
   width: 40%;
   margin: 1vmax auto;
   color: var(--coral);
-  font-size: 2vmax;
+  
   padding: 1vmax;
 }
 
@@ -567,7 +567,6 @@ nav > ul > li > a:hover {
   border: 1px solid var(--coral);
   border-radius: 3px;
   font-weight: bold;
-  font-size: 2vmax;
   transition: transform 250ms ease-in, color 200ms ease-in,
     text-decoration 200ms ease-in;
 }
@@ -590,9 +589,16 @@ nav > ul > li > a:hover {
 @media (max-width: 1024px) {
   .contactfooter > #footertext {
     width: 80%;
+    font-size: 2vmax;
   }
   #footerbuttons {
     width: 80%;
+  }
+  .contactbutton {
+    font-size: 2vmax;
+  }
+  .contactfooter > #footertitle::after {
+    width: 40%;
   }
  }
 /* desktop */
