@@ -622,17 +622,6 @@ nav > ul > li > a:hover {
 /* desktop */
 @media (max-width: 1600px) {
 }
-
-/* .contact i {
-  padding: 0.7vmax;
-  color: inherit;
-  transition: transform 250ms ease-in;
-}
-
-.contact i:hover {
-  transform: translate(0px, -5px);
-} */
-
 /*---------------TOP (chevron nav to top)-------------*/
 
 body::before {
