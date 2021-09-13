@@ -434,7 +434,7 @@ nav > ul > li > a:hover {
     fadeIn 1000ms ease-in 0s 1 normal forwards;
 }
 
-#aboutimg > img {
+#aboutimg img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -442,7 +442,7 @@ nav > ul > li > a:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-#aboutimg > img:hover {
+#aboutimg img:hover {
   filter: grayscale(0%);
 }
 
@@ -488,7 +488,7 @@ nav > ul > li > a:hover {
     padding: 5vmax;
   }
 
-  #aboutimg > img {
+  #aboutimg img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     filter: none;
   }
