@@ -426,6 +426,7 @@ nav > ul > li > a:hover {
 
 #aboutimg {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 250ms ease-in;
   animation: translateright 1000ms ease-in-out 0s 1 normal none,
     fadeIn 1000ms ease-in 0s 1 normal forwards;
   -webkit-animation: translateright 1000ms ease-in-out 0s 1 normal none,
@@ -434,11 +435,16 @@ nav > ul > li > a:hover {
     fadeIn 1000ms ease-in 0s 1 normal forwards;
 }
 
+#aboutimg:hover {
+  transform: translate(0px, -5px);
+}
+
 #aboutimg img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   filter: grayscale(100%);
+  transition: filter 250ms ease-in;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -739,7 +745,7 @@ nav > ul > li > a:hover {
   color: var(--coral);
   text-decoration: underline;
   text-underline-offset: 3px;
-  box-shadow: 5px 5px 10px var(--gray);
+  /* box-shadow: 5px 5px 10px var(--gray); */
 }
 
 #footerlast {
