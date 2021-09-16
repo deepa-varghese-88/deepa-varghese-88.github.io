@@ -130,6 +130,204 @@
       <div id="projects" class="page">
         <div class="section projects">
           <div id="projectstitle">Some of my projects</div>
+          <div id="projectsbody">
+            <!-- NASA DASHBOARD -->
+            <div class="featured" id="firstfeatured">
+              <div class="fproj-desc">
+                <a
+                  href="https://satellitedash.herokuapp.com/"
+                  target="_blank"
+                  title="NASA Dashboard"
+                  ><h3>NASA Dashboard</h3></a
+                >
+                <p>
+                  A React.js website with 1) a dashboard for natural events
+                  occurring around the globe as recorded by NASA and provided
+                  via their public EONET API, and 2) a dashboard to track
+                  satellite information. This project was a team effort and our
+                  vehicle for learning React.
+                </p>
+                <ul class="fproj-techlinks">
+                  <li>React.js,</li>
+                  <li>CSS,</li>
+                  <li>NASA APIs</li>
+                </ul>
+                <div class="fproj-links">
+                  <a
+                    href="https://satellitedash.herokuapp.com/"
+                    target="_blank"
+                    title="NASA Dashboard"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/priya242/Satellite-Tracker"
+                    target="_blank"
+                    title="NASA Dashboard Github Link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="fproj-img">
+                <img src="css/images/nasa-dashboard.PNG" alt="NASA Dashboard" />
+                <div class="fproj-img-overlay"></div>
+              </div>
+            </div>
+            <!-- PSU JOB FAIR MAP -->
+            <div class="featured" id="secondfeatured">
+              <div class="fproj-img">
+                <img
+                  src="css/images/psu-career-fair-map.PNG"
+                  alt="P.S.U. Job Fair Map"
+                />
+                <div class="fproj-img-overlay"></div>
+              </div>
+              <div class="fproj-desc">
+                <a
+                  href="https://psucareerfairmap.herokuapp.com/"
+                  target="_blank"
+                  title="PSU Career Fair Map"
+                  ><h3>PSU Job Fair Map</h3></a
+                >
+                <p>
+                  A virtual map of the career fair held at PSU every quarter at
+                  the SMSU Ballroom, deployed on Heroku. The map allows you to
+                  mark the companies you wish to go to, have already been to and
+                  to find summarised information about each company.
+                </p>
+                <ul class="fproj-techlinks">
+                  <li>Node.js (Express.js),</li>
+                  <li>EJS,</li>
+                  <li>CSS,</li>
+                  <li>MongoDB,</li>
+                  <li>Google's Knowledge Graph API</li>
+                </ul>
+                <div class="fproj-links">
+                  <a
+                    href="https://psucareerfairmap.herokuapp.com/"
+                    target="_blank"
+                    title="PSU Career Fair Map"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/deepa-varghese-88/careerfairmap"
+                    target="_blank"
+                    title="PSU Career Fair Map Github Link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- BUBBLE TEA STORE -->
+            <div class="featured" id="thirdfeatured">
+              <div class="fproj-desc">
+                <a
+                  href="https://media.pdx.edu/media/t/0_4gn9itdw"
+                  target="_blank"
+                  title="Boba Tea Store Locator"
+                  ><h3>Boba Tea Store Locator</h3></a
+                >
+                <p>
+                  A serverless web app made possible by GCP's AppEngine that lets
+                  customers find the best boba tea stores around them, nutrition 
+                  info for different options and if it's a good weather to go outside. 
+                  Sentiment Analysis done on the uploaded overall reviews determine 
+                  each location's rating, and the Vision API prohibits uploading 
+                  inappropriate pictures. The six ML APIs that were integrated: 1) 
+                  GCP's Vision API, 2) GCP's Places API, 3) GCP's NLP API, 4) GCP's 
+                  Translate API, 5) AccuWeather's Weather API, and 6) Nutritionix API<br>
+                  (now retired due to GCP cost)
+                </p>
+                <ul class="fproj-techlinks">
+                  <li>GCP App Engine,</li>
+                  <li>Python Flask,</li>
+                  <li>Gunicorn,</li>
+                  <li>Nginx,</li>
+                  <li>6 ML APIs</li>
+                </ul>
+                <div class="fproj-links">
+                  <a
+                    href="https://media.pdx.edu/media/t/0_4gn9itdw"
+                    target="_blank"
+                    title="Boba Tea Store Locator"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/deepa-varghese-88/BubbleTeaStore-GPCAppEngine"
+                    target="_blank"
+                    title="Boba Tea Store Locator Github link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="fproj-img">
+                <img
+                  src="css/images/boba-tea-store-locator.PNG"
+                  alt="Boba Tea Store Locator"
+                />
+                <div class="fproj-img-overlay"></div>
+              </div>
+            </div>
+            <!-- Monitoring using Elasticsearch, Kibana and Filebeat -->
+            <div class="featured" id="fourthfeatured">
+              <div class="fproj-img">
+                <img
+                  src="css/images/sre.PNG"
+                  alt="Site Reliability Engineering"
+                />
+                <div class="fproj-img-overlay"></div>
+              </div>
+              <div class="fproj-desc">
+                <a
+                  href="https://github.com/deepa-varghese-88/SRE-Monitoring"
+                  target="_blank"
+                  title="Site Reliability Engineering Github Link"
+                  ><h3>Site Reliability Engineering</h3></a
+                >
+                <p>Monitoring was set up using Elasticsearch, Filebeats and Kibana for a sample website constructed using a NGINX web listener connected to a Gunicorn application server for a Django Python app connected to a POSTGRESQL database, hosted on Google’s Cloud Platform (GCP). Ensured that the site stayed up, was load-balanced and monitored for the duration of an academic term as it survived real-world issues.
+                  <br>
+                  (now retired due to GCP cost)
+                </p>
+                <ul class="fproj-techlinks">
+                  <li>ElasticSearch,</li>
+                  <li>Kibana,</li>
+                  <li>Filebeat,</li>
+                  <li>Nginx,</li>
+                  <li>Gunicorn,</li>
+                  <li>Python Django,</li>
+                  <li>PostgreSQL,</li>
+                  <li>REST API</li>
+                </ul>
+                <div class="fproj-links">
+                  <a
+                    href="https://github.com/deepa-varghese-88/SRE-Monitoring"
+                    target="_blank"
+                    title="Site Reliability Engineering Github Link"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/deepa-varghese-88/SRE-Monitoring"
+                    target="_blank"
+                    title="Site Reliability Engineering Github Link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="moreprojects">
+              <div id="moreprojtitle">Other Interesting Projects</div>
+              <div id="moreprojbody">
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+                <div class="moreproj"></div>
+              </div>
+            </div>
+          </div>
           <div id="MLAI" class="projectlist">
             <div class="projectblock">
               <img src="css/images/8queens.png" alt="8 queens problem" />
@@ -451,7 +649,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-------------------FOOTER CONTACT--------------------------->
@@ -485,6 +683,7 @@
           <a
             href="https://github.com/deepa-varghese-88/deepa-varghese-88.github.io"
             target="_blank"
+            title="Deepa's Github"
             >Deepa Varghese</a
           >
         </div>

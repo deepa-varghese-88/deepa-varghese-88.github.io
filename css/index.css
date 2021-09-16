@@ -15,6 +15,7 @@ body {
   /* --coral: #b30600; */
   --background-color: white;
   --gray: #595959;
+  --light-gray: #989898;
 }
 
 a {
@@ -426,7 +427,7 @@ nav > ul > li > a:hover {
 
 #aboutimg {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, box-shadow 250ms ease-in;
   animation: translateright 1000ms ease-in-out 0s 1 normal none,
     fadeIn 1000ms ease-in 0s 1 normal forwards;
   -webkit-animation: translateright 1000ms ease-in-out 0s 1 normal none,
@@ -436,7 +437,8 @@ nav > ul > li > a:hover {
 }
 
 #aboutimg:hover {
-  transform: translate(0px, -5px);
+  transform: translate(0px, 5px);
+  box-shadow: none;
 }
 
 #aboutimg img {
@@ -558,6 +560,159 @@ nav > ul > li > a:hover {
   height: 1px;
   background-color: var(--coral);
 }
+
+/* mobile phones */
+@media (max-width: 414px) {
+  .projects > #projectstitle {
+    color: var(--coral);
+    font-size: 3vmax;
+  }
+  .projects > #projectstitle::after {
+    background-color: var(--gray);
+  }
+}
+
+#projectsbody {
+  margin: 4vmax auto;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-gap: 1vmax;
+  margin: 4vmax 8vmax;
+  padding-top: 4vmax;
+}
+
+.fproj-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: filter 250ms ease-in;
+}
+
+.fproj-img {
+  position: relative;
+}
+
+.fproj-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--gray);
+  opacity: 0.7;
+  z-index: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fproj-img-overlay:hover {
+  opacity: 0;
+}
+
+.fproj-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.fproj-desc h3 {
+  color: var(--coral);
+  font-size: 1.5vmax;
+  border-bottom: 1px solid transparent;
+  transition: border 200ms ease-in, transform 250ms ease-in;
+}
+
+.fproj-desc h3:hover {
+  color: var(--gray);
+  border-color: var(--gray);
+  transform: translate(0px, -2px);
+}
+
+.fproj-desc p {
+  background-color: var(--coral);
+  color: var(--background-color);
+  padding: 1vmax;
+  margin: 0;
+  font-size: 1vmax;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fproj-techlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+}
+.fproj-techlinks > li {
+  padding: 0 0.6vmax;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1vmax;
+  color: var(--gray);
+}
+
+.fproj-links i {
+  padding: 0 0.5vmax;
+  font-size: 1.5vmax;
+  color: var(--coral);
+  transition: transform 250ms ease-in, color 250ms ease-in;
+}
+
+.fproj-links i:hover {
+  color: var(--gray);
+  transform: translate(0px, -2px);
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .featured {
+    margin: 4vmax 4vmax;
+  }
+  .fproj-img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+  }
+
+  .fproj-img-overlay {
+    opacity: 0.9;
+  }
+
+  .fproj-img-overlay:hover {
+    opacity: 0.9;
+  }
+  .fproj-desc {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 2;
+    margin: 2vmax 2vmax;
+  }
+  .fproj-desc p {
+    box-shadow: none;
+  }
+
+  .fproj-desc h3 {
+    color: var(--background-color);
+  }
+  .fproj-desc h3:hover {
+    color: var(--background-color);
+    border-color: var(--background-color);
+  }
+
+  .fproj-techlinks > li {
+    color: var(--background-color);
+  }
+
+  .fproj-links i:hover {
+    color: var(--background-color);
+  }
+}
 /* 
 #projectsnav {
   animation: translateleft 1000ms ease-in-out 0s 1 normal none,
@@ -663,20 +818,6 @@ nav > ul > li > a:hover {
   position: absolute;
   bottom: 0px;
   right: 10px;
-}
-
-/* mobile phones */
-@media (max-width: 414px) {
-  .projects > #projectstitle {
-    color: var(--coral);
-    font-size: 3vmax;
-  }
-  .projects > #projectstitle::after {
-    background-color: var(--gray);
-  }
-}
-/* tablet */
-@media (max-width: 768px) {
 }
 
 /* laptop */
