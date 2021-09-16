@@ -713,6 +713,21 @@ nav > ul > li > a:hover {
     color: var(--background-color);
   }
 }
+.moreprojects > #moreprojtitle {
+  color: var(--gray);
+  font-size: 1.5vmax;
+  text-align: center;
+  padding-top: 8vmax;
+}
+
+.moreprojects > #moreprojtitle::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: var(--coral);
+}
 /* 
 #projectsnav {
   animation: translateleft 1000ms ease-in-out 0s 1 normal none,
