@@ -268,7 +268,7 @@
                 <div class="fproj-img-overlay"></div>
               </div>
             </div>
-            <!-- Monitoring using Elasticsearch, Kibana and Filebeat -->
+            <!-- MONITORING WITH EFK -->
             <div class="featured" id="fourthfeatured">
               <div class="fproj-img">
                 <img
@@ -290,8 +290,8 @@
                   listener connected to a Gunicorn application server for a
                   Django Python app connected to a POSTGRESQL database, hosted
                   on Google’s Cloud Platform (GCP). Ensured that the site stayed
-                  up, was load-balanced and monitored for the duration of an
-                  academic term as it survived real-world issues.
+                  up and was monitored for the duration of an academic term as
+                  it survived real-world issues.
                   <br />
                   (now retired due to GCP cost)
                 </p>
@@ -322,338 +322,373 @@
               </div>
             </div>
             <div class="moreprojects">
-              <div id="moreprojtitle">Other Interesting Projects</div>
+              <div id="moreprojtitle">Other Interesting Course Projects</div>
               <div id="moreprojbody">
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-                <div class="moreproj"></div>
-              </div>
-            </div>
-          </div>
-          <div id="MLAI" class="projectlist">
-            <div class="projectblock">
-              <img src="css/images/8queens.png" alt="8 queens problem" />
-              <div class="proj">
-                Genetic Algorithms -> 8 queens problem<br /><span class="course"
-                  >AI</span
-                ><br /><span class="tech">Python</span>
-              </div>
-              <div class="overlay">
-                Genetic Algorithms were used to create a program that can solve
-                the 8 queens problem, with the following variations to analyse
-                options against each other.
-                <ul>
-                  <li>
-                    randomly mutating child individuals to cause high mutation
-                    probabiliy
-                  </li>
-                  <li>constant v randomly generated crossover point</li>
-                  <li>high v low population sizes</li>
-                </ul>
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/Algorithms"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- RDBMS vs CLOUD -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Query Optimization and Time Performace Comparison
+                    </div>
+                    <div class="proj-course">
+                      RDBMS <br />
+                      v/s <br />
+                      CLOUD
+                    </div>
+                    <div class="proj-tech">&lt;/ MongoDB, PostgreSQL &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Analysis of NoSQL's complex queries and comparison with
+                    SQL's counterparts. Comparison was done on the basis of time
+                    performance, with and without indexes. Dataset used: IMDB
+                    data (actors, roles, movies)
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/CloudAndCluster-SQLvNoSQL"
+                        target="_blank"
+                        title="SQL vs NoSQL Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="projectblock">
-              <img src="css/images/8puzzle.png" alt="8 and 15 puzzle" />
-              <div class="proj">
-                BFS and A* -> 8 and 15 puzzle<br /><span class="course">AI</span
-                ><br /><span class="tech">Python</span>
-              </div>
-              <div class="overlay">
-                The BFS Algorithm and the A* Algorithm were implemented to solve
-                the 8 puzzle and the 15 puzzle problems. The three heuristics
-                used for each of the four resultant scenarios were:
-                <ul>
-                  <li>Manhattan distance</li>
-                  <li>Euclidean distance</li>
-                  <li>Misplaced Tiles</li>
-                </ul>
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/AI-8-15-puzzle-BFS-Astar"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- Cloud -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Data Modeling, Analysis (Freeway Data)
+                    </div>
+                    <div class="proj-course">CLOUD</div>
+                    <div class="proj-tech">
+                      &lt;/ Python/Java, MongoDB, GCP &gt;
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Developed a data model that was optimum for sharding.
+                    Performed:
+                    <ul>
+                      <li>
+                        ETL (using Python) where initial data cleansing was also
+                        done
+                      </li>
+                      <li>Data Cleaning (in MongoDB)</li>
+                      <li>
+                        Data Analysis (querying in Mongodb, and scripts in Java)
+                        to draw conclusions about Freeway traffic in Portland
+                        for 2 Highways.
+                      </li>
+                    </ul>
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/CloudAndCluster-DataModelingAndAnalysis"
+                        target="_blank"
+                        title="Cloud and Clusters' Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="CodingAL" class="projectlist">
-            <div class="projectblock">
-              <img src="css/images/algo.PNG" alt="algorithmic analysis" />
-              <div class="proj">
-                Theoretical and empirical analysis<br /><span class="course"
-                  >Algorithms</span
-                ><br /><span class="tech">Python</span>
-              </div>
-              <div class="overlay">
-                Three Algorithms:
-                <ul>
-                  <li>
-                    Brute Force<br />[Time Complexity: O(n3), Space Complexity:
-                    O(1)]
-                  </li>
-                  <li>
-                    Dynamic Programming<br />[Time Complexity: O(n2), Space
-                    Complexity: O(n2)]
-                  </li>
-                  <li>
-                    Manacher's Algorithm<br />[Time Complexity: O(n), Space
-                    Complexity: O(n)]
-                  </li>
-                </ul>
-                ... were theoretically analysed to calculate the expected time
-                and space complexities, and empirically run for varying string
-                and palindrome sizes to confirm the complexities and compare
-                their results.
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/Algorithms"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- RDBMS -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Data Modeling, Analysis (Harry Potter)
+                    </div>
+                    <div class="proj-course">RDBMS</div>
+                    <div class="proj-tech">&lt;/ PostgreSQL &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Developed ERP data model and implemented a POSTGRESQL
+                    database, and scripted complex SQL queries (Groupby, Merge,
+                    subquery, joins)
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/RelDB-DataModelingAndAnalysis"
+                        target="_blank"
+                        title="RDBMS Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="projectblock">
-              <img src="css/images/irc.jpg" alt="IRC" />
-              <div class="proj">
-                Internet Chat Relay<br /><span class="course"
-                  >Internetworking protocols</span
-                ><br /><span class="tech">Python</span>
-              </div>
-              <div class="overlay">
-                A basic Python multithreading program, in the client server
-                model, with one always-on server, and multiple clients.
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/IRC-chatapp-basic"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- AI - GENETIC -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Genetic Algorithm implementation for the 8 queens’ problem
+                    </div>
+                    <div class="proj-course">AI</div>
+                    <div class="proj-tech">&lt;/ Python &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Implemented the genetic algorithm to solve the 8-queens
+                    game. Findings discussed in paper uploaded to Github.
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/AI-8queens-GeneticAlgorithm"
+                        target="_blank"
+                        title="Genetic Algorithm's Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div id="UX" class="projectlist">
-            <div class="projectblock">
-              <img
-                src="css/images/hci.PNG"
-                alt="In store shopping experience"
-              />
-              <div class="proj">
-                In store shopping exp - app design<br /><span class="course"
-                  >HCI</span
-                >
-              </div>
-              <div class="overlay">
-                A project in User experience Design and analysis. The milestones
-                achieved were:
-                <ul>
-                  <li>
-                    User Research: Ethnographic participant observation and
-                    interviews
-                  </li>
-                  <li>Data Analysis: Affinity Diagram and Relational Map</li>
-                  <li>Design: Brainstorming and Storyboarding</li>
-                  <li>Prototyping: sketching (low-fidelity prototype)</li>
-                  <li>
-                    Evaluation: Cognitive Walkthrough and Think-Aloud
-                    evaluations
-                  </li>
-                </ul>
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/HCI-Project-InStoreShopping"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- AI - A* and BFS for 8 and 15 puzzle -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      A* and BFS implementation for the 8 and 15 puzzle
+                    </div>
+                    <div class="proj-course">AI</div>
+                    <div class="proj-tech">&lt;/ Python &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Implemented the A* and BFS algorithms to solve the 8 and 15
+                    piece puzzles, with 3 heuristics:
+                    <ul>
+                      <li>Manhattan Distance</li>
+                      <li>Euclidean Distance</li>
+                      <li>Misplaced tiles</li>
+                    </ul>
+                    Findings discussed in paper uploaded to Github.
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/AI-8-15-puzzle-BFS-Astar"
+                        target="_blank"
+                        title="A* and BFS algorithms' Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="projectblock">
-              <img
-                src="css/images/careerfairnavigation.gif"
-                alt="career fair navigation"
-              />
-              <div class="proj">
-                Career Fair Navigation Website<br /><span class="course"
-                  >Full Stack Web Dev</span
-                ><br /><span class="tech">HTML, CSS, Javascript</span>
-              </div>
-              <div class="overlay">
-                (ongoing)<br />
-                A Full Stack Web Dev Project to create a website that allows PSU
-                students to navigate through the Career fair
-                <div class="icon">
-                  <a href="" target="_blank"><i class="fas fa-seedling"></i></a>
+                <!-- AI - A* and BFS for 8 and 15 puzzle -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Effects of noise reduction using DBScan on Supervised
+                      Algorithms
+                    </div>
+                    <div class="proj-course">ML</div>
+                    <div class="proj-tech">&lt;/ Python &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Explored the effects of DBScan, an unsupervised clustering
+                    algorithm, on the accuracies of supervised algorithms. It
+                    significantly impacted only the Gaussian Naive Bayes
+                    Classifier. <br />
+                    The github link has been made private by the owner, my
+                    teammate. Please reach out to me directly to discuss!
+                    <div class="icon">
+                      <a
+                        href="https://github.com/mohamm-alsaid/ml-final-project"
+                        target="_blank"
+                        title="Private Github Repository"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="projectblock">
-              <img
-                src="css/images/autocomplete.jpg"
-                alt="autocomplete and autocorrect"
-              />
-              <div class="proj">
-                Computer aided writing tech's impact on human interactions<br /><span
-                  class="course"
-                  >User Research Methods</span
-                >
-              </div>
-              <div class="overlay">
-                (ongoing)<br />
-                Qualitative Research on how Autocomplete and Autocorrect are
-                shaping human interactions.
-                <div class="icon">
-                  <a href="" target="_blank"><i class="fas fa-seedling"></i></a>
+                <!-- HCI -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      In store shopping exp - app design
+                    </div>
+                    <div class="proj-course">HCI</div>
+                    <div class="proj-tech">
+                      Research, Lo-fi Prototyping and User Testing
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    A project in User experience Design and analysis. The
+                    milestones achieved were:
+                    <ul>
+                      <li>User Research: Observations, Interviews</li>
+                      <li>
+                        Data Analysis: Affinity Diagram and Relational Map
+                      </li>
+                      <li>Design: Personas and Storyboarding</li>
+                      <li>Prototyping: sketching (low-fidelity prototype)</li>
+                      <li>
+                        Evaluation: Cognitive Walkthrough and Think-Aloud
+                        evaluations
+                      </li>
+                    </ul>
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/Algorithms"
+                        target="_blank"
+                        title="Algorithms' Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div id="Software" class="projectlist">
-            <div class="projectblock">
-              <img src="css/images/monitoring.PNG" alt="monitoring" />
-              <div class="proj">
-                Monitoring on django website<br /><span class="course"
-                  >Site Reliability Engineering</span
-                ><br /><span class="tech"
-                  >Elasticsearch -> Kibana -> Filebeats</span
-                >
-              </div>
-              <div class="overlay">
-                Set up monitoring for a Python Django Website, which was hosted
-                on GCP with nginx and gunicorn. Set up dedicated VM for
-                monitoring (with ElasticSearch and Kibana) so as not to overload
-                the Main Server hosting the website. Filebeats was set up in the
-                main server which also consisted of the main PostgreSQL as well
-                as the VM with the PostgreSQL Standby VM.
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/SRE-Monitoring"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- UCI -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      User-As-Designer (UAD) kit design
+                    </div>
+                    <div class="proj-course">UX</div>
+                    <div class="proj-tech">
+                      Research, Lo-fi Prototyping and User Testing
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Created Design for a “User-As-Designer” kit to help design a
+                    custom, ergonomically efficient Kitchen Layout prototype
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/User-As-Designer"
+                        target="_blank"
+                        title="UAD's Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="projectblock">
-              <img
-                src="css/images/bubbletea.PNG"
-                alt="bubletea store locator"
-              />
-              <div class="proj">
-                Bubble Tea Store Locator<br /><span class="course"
-                  >Internet and Cloud Systems</span
-                ><br /><span class="tech"
-                  >Python Flask, GCP, App Engine, ML APIs</span
-                >
-              </div>
-              <div class="overlay">
-                A Bubble Tea Store Locator website was created using Python
-                Flask (MVP framework), nginx and gunicorn, and hosted on GCP's
-                App Engine (thus serverless), with 6 ML APIs
-                <ul>
-                  <li>GCP's Vision API</li>
-                  <li>GCP's Places API</li>
-                  <li>GCP's Natural Language Processing API</li>
-                  <li>GCP's Translate API</li>
-                  <li>Accuweather's Weather API</li>
-                  <li>Nutritionix API</li>
-                </ul>
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/BubbleTeaStore-GPCAppEngine"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- UX Research -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      UX Microinteractions' longterms effects
+                    </div>
+                    <div class="proj-course">UX Research</div>
+                    <div class="proj-tech">
+                      Qualitative Research methods, Affinity Diagrams
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Conducted in-depth Qualitative Research on how Autocomplete
+                    and Autocorrect are shaping human interactions.
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/Algorithms"
+                        target="_blank"
+                        title="Algorithms' Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div id="Databases" class="projectlist">
-            <div class="projectblock">
-              <img src="css/images/sqlvnosql.PNG" alt="SQL v NoSQL" />
-              <div class="proj">
-                Complex Queries, SQL v NoSQL<br /><span class="course"
-                  >Cloud and Clusters</span
-                ><br /><span class="tech">MongoDB, PostgreSQL</span>
-              </div>
-              <div class="overlay">
-                Analysis of NoSQL's complex queries and comparison with SQL's
-                counterparts. Comparison was done on the basis of time
-                performance, with and without indexes. Dataset used: IMDB data
-                (actors, roles, movies)
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/CloudAndCluster-SQLvNoSQL"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- Algorithms -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Theoretical and empirical analysis
+                    </div>
+                    <div class="proj-course">ALGORITHMS</div>
+                    <div class="proj-tech">&lt;/ Python &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Three Algorithms:
+                    <ul>
+                      <li>
+                        Brute Force <br />
+                        [T: O(n3), S: O(1)]
+                      </li>
+                      <li>
+                        Dynamic Programming <br />
+                        [T: O(n2), S: O(n2)]
+                      </li>
+                      <li>
+                        Manacher's Algorithm <br />
+                        [T: O(n), S: O(n)]
+                      </li>
+                    </ul>
+                    were theoretically and empirically analysed for the longest
+                    palindromic substring problem, to compare the expected and
+                    actual time and space complexities, for varying string and
+                    palindrome sizes.
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/Algorithms"
+                        target="_blank"
+                        title="Algorithms' Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="projectblock">
-              <img src="css/images/freeway2.png" alt="Freeway data analysis" />
-              <div class="proj">
-                Data Modeling, Analysis (Freeway Data)<br /><span class="course"
-                  >Cloud and Clusters</span
-                ><br /><span class="tech">MongoDB, Python</span>
-              </div>
-              <div class="overlay">
-                Developed a data model that was optimum for sharding. Performed:
-                <ul>
-                  <li>
-                    ETL (using Python) where initial data cleansing was also
-                    done
-                  </li>
-                  <li>Data Cleaning (in MongoDB)</li>
-                  <li>
-                    Data Analysis (querying in Mongodb, and scripts in Java) to
-                    draw conclusions about Freeway traffic in Portland for 2
-                    Highways.
-                  </li>
-                </ul>
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/CloudAndCluster-DataModelingAndAnalysis"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- Internetworking Protocols -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Internet Relay Chat
+                    </div>
+                    <div class="proj-course">
+                      INTER <br />
+                      NETWORKING <br />
+                      PROTOCOLS
+                    </div>
+                    <div class="proj-tech">&lt;/ Python &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    A basic Python multithreading program, in the client server
+                    model, with one always-on server, and multiple clients.
+                    <div class="icon">
+                      <a
+                        href="https://github.com/deepa-varghese-88/IRC-chatapp-basic"
+                        target="_blank"
+                        title="IRC chatapp's Github Link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="projectblock">
-              <img src="css/images/hp.PNG" alt="Harry Potter data analysis" />
-              <div class="proj">
-                Data Modeling, Analysis (Harry Potter)<br /><span class="course"
-                  >Relational Databases</span
-                ><br /><span class="tech">PostgreSQL</span>
-              </div>
-              <div class="overlay">
-                Developed ERP data model and implemented a POSTGRESQL database,
-                and scripted complex SQL queries (Groupby, Merge, subquery,
-                joins)
-                <div class="icon">
-                  <a
-                    href="https://github.com/deepa-varghese-88/RelDB-DataModelingAndAnalysis"
-                    target="_blank"
-                    ><i class="fas fa-external-link-square-alt"></i
-                  ></a>
+                <!-- Programmatic SQL -->
+                <div class="moreproj">
+                  <div class="proj-banner">
+                    <div class="proj-title">
+                      <i class="fas fa-folder"></i> <br />
+                      Designing course project
+                    </div>
+                    <div class="proj-course">
+                      PROGRAM-<br />MATIC <br />
+                      SQL
+                    </div>
+                    <div class="proj-tech">&lt;/ Python, PostgreSQL &gt;</div>
+                  </div>
+                  <div class="overlay">
+                    <i class="fas fa-folder-open"></i><br />
+                    Designing and developing a 4 part course project for the
+                    'Intro to Databases class' to train students in programmatic
+                    SQL. This includes:
+                    <ul>
+                      <li>Configuration</li>
+                      <li>ETL</li>
+                      <li>data fetch from external API</li>
+                      <li>data visualisation.</li>
+                    </ul>
+                    <div class="icon">
+                      <a target="_blank" title="Ongoing"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

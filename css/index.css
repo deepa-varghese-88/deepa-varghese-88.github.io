@@ -183,7 +183,7 @@ nav > ul > li > a:hover {
     padding-inline-start: 0;
   }
   nav > ul > li {
-    font-size: 2vmax;
+    font-size: 2.5vmax;
     /* color: var(--gray); */
   }
 }
@@ -576,6 +576,8 @@ nav > ul > li > a:hover {
   margin: 4vmax auto;
 }
 
+/* ------Featured ------- */
+
 .featured {
   display: grid;
   grid-template-columns: 50% auto;
@@ -694,10 +696,12 @@ nav > ul > li > a:hover {
     margin: 2vmax 2vmax;
   }
   .fproj-desc p {
+    font-size: 2vmax;
     box-shadow: none;
   }
 
   .fproj-desc h3 {
+    font-size: 2.5vmax;
     color: var(--background-color);
   }
   .fproj-desc h3:hover {
@@ -706,60 +710,157 @@ nav > ul > li > a:hover {
   }
 
   .fproj-techlinks > li {
+    font-size: 2vmax;
     color: var(--background-color);
   }
-
+  .fproj-links i {
+    font-size: 2vmax;
+  }
   .fproj-links i:hover {
     color: var(--background-color);
   }
 }
+
+/* ------More Projects ------- */
+
 .moreprojects > #moreprojtitle {
   color: var(--gray);
   font-size: 1.5vmax;
   text-align: center;
-  padding-top: 8vmax;
+  padding: 8vmax 0;
 }
 
 .moreprojects > #moreprojtitle::after {
   content: "";
   display: block;
-  width: 30%;
+  width: 40%;
   height: 1px;
   margin: 0 auto;
   background-color: var(--coral);
 }
-/* 
-#projectsnav {
-  animation: translateleft 1000ms ease-in-out 0s 1 normal none,
-    fadeIn 1000ms ease-in 0s 1 normal forwards;
-  -webkit-animation: translateleft 1000ms ease-in-out 0s 1 normal none,
-    fadeIn 1000ms ease-in 0s 1 normal forwards;
-  -moz-animation: translateleft 1000ms ease-in-out 0s 1 normal none,
-    fadeIn 1000ms ease-in 0s 1 normal forwards;
-}
 
-#projectsnav > ul {
+#moreprojbody {
   display: flex;
-  justify-content: flex-end;
-  margin-block-start: 0em;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2vmax 2vmax;
 }
 
-#projectsnav > ul > li {
-  list-style-type: none;
-  padding: 1vmax;
-  color: var(--coral);
+.moreproj {
+  position: relative;
+  width: 20vmax;
+  height: 25vmax;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gray),
+    var(--coral)
+  );
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--background-color);
+  padding: 0.5vmax;
+  font-size: 1vmax;
+}
+
+.proj-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  box-sizing: border-box;
+  padding: 0.5vmax;
+}
+
+.proj-banner > .proj-title {
+  width: 100%;
+}
+
+.proj-banner > .proj-title > i {
   font-size: 1.5vmax;
-  font-weight: 900;
+  color: var(--coral);
+  padding-bottom: 0.5vmax;
 }
 
-#projectsnav > ul > li > a {
-  border-bottom: 1px solid transparent;
-  transition: border 200ms ease-in;
+.proj-banner > .proj-course {
+  font-size: 2.7vmax;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
-#projectsnav > ul > li > a:hover {
-  border-color: var(--gray);
-} */
+.proj-banner > .proj-tech {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: 100%;
+  text-align: right;
+}
+
+.moreproj > .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--background-color);
+  color: var(--gray);
+  padding: 1vmax;
+  box-sizing: border-box;
+  transition: 500ms ease;
+}
+
+.moreproj > .overlay > i {
+  font-size: 1.5vmax;
+  padding-bottom: 0.5vmax;
+  color: var(--coral);
+}
+
+.moreproj:hover .overlay {
+  opacity: 1;
+}
+
+.moreproj > .overlay > .icon {
+  font-size: 1.5vmax;
+  position: absolute;
+  padding: 0.5vmax 0vmax;
+  top: 0px;
+  right: 10px;
+  color: var(--coral);
+  transition: transform 250ms ease-in;
+}
+
+.moreproj > .overlay > .icon:hover {
+  transform: translate(2px, -2px);
+}
+
+.moreproj > .overlay > .icon i:hover {
+  color: var(--gray);
+}
+
+@media (max-width: 414px) {
+  .moreproj {
+    width: 35vmax;
+    height: 50vmax;
+  }
+
+  .moreproj, .proj-banner > .proj-title > i, .moreproj > .overlay > i, .moreproj > .overlay > .icon {
+    font-size: 2vmax;
+  }
+
+  .proj-banner > .proj-course {
+    font-size: 4.5vmax;
+  }
+
+  .moreprojects > #moreprojtitle  {
+    font-size: 2.2vmax;
+  }
+
+
+}
+/* ------------------------------ */
 
 .projectlist {
   width: 100%;
@@ -831,7 +932,6 @@ nav > ul > li > a:hover {
 .projectblock > .overlay > .icon {
   font-size: 2.6em;
   position: absolute;
-  bottom: 0px;
   right: 10px;
 }
 
@@ -986,5 +1086,14 @@ body > a {
 
 .top i:hover {
   transform: translate(0px, -5px);
+}
+
+@media (max-width: 414px) {
+  body::before {
+    display: none;
+  }
+  .top { 
+    display: none;
+
 }
 /*#####################################################*/
