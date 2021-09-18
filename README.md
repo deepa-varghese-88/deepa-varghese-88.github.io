@@ -1,4 +1,7 @@
 # deepa-varghese-88.github.io
+
+My Portfolio built from scratch purely in HTML and CSS5. In order to learn CSS and illustrate it's power, I wanted to build a fully functional website with a beautiful UI, without javascript and other high-level programming languages. 
+
 References:  
 - www.w3schools.com (most css/html syntax)
 - https://www.youtube.com/watch?v=_yTW9FvN4N8 (one page website)  
