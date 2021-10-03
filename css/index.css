@@ -9,10 +9,11 @@ body {
 }
 
 :root {
-  --coral: #ff5851;
+  /* --coral: #ff5851; */
   /* --coral-write: #b30600; */
   /* WCAG AAA: */
   /* --coral: #b30600; */
+  --coral: #cd2026;
   --background-color: white;
   --gray: #595959;
   --light-gray: #989898;
