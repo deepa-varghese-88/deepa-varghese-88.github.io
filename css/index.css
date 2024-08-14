@@ -309,6 +309,7 @@ nav > ul > li > a:hover {
   font-size: 6vmax;
   font-weight: bold;
   text-align: right;
+  border: 10px solid var(--coral);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation: translateright 1000ms ease-in-out 0s 1 normal none,
     fadeIn 1000ms ease-in 0s 1 normal forwards;
